@@ -14,6 +14,10 @@ Key design concepts: perspective spectrum, unexpected voices, irreplaceable obse
 
 Chinese adaptation of the council skill (not a translation). Aligned with the English version's behavioral specification while using natural Chinese expression. All tool names (AskUserQuestion, TeamCreate, etc.) remain in English.
 
+## Community
+
+This project is shared with the [LINUX DO](https://linux.do/) community.
+
 ## License
 
 MIT

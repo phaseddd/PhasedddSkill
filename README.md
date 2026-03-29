@@ -14,6 +14,10 @@ Key design concepts: perspective spectrum, unexpected voices, irreplaceable obse
 
 Chinese adaptation of the council skill (not a translation). Aligned with the English version's behavioral specification while using natural Chinese expression. All tool names (AskUserQuestion, TeamCreate, etc.) remain in English.
 
+### tim-mediastorm
+
+Writing skill that emulates Tim's (潘天鸿, founder of MediaStorm/影视飓风) distinctive writing style — blending tech rationality with humanistic poetry. Includes a comprehensive style guide covering HKRR theory, narrative arc, elevation techniques, golden sentences, and scenario-specific adaptations. Only activates when the user explicitly requests Tim or MediaStorm style.
+
 ## Community
 
 This project is shared with the [LINUX DO](https://linux.do/) community.

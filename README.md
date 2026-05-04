@@ -14,6 +14,23 @@ Key design concepts: perspective spectrum, unexpected voices, irreplaceable obse
 
 Chinese adaptation of the council skill (not a translation). Aligned with the English version's behavioral specification while using natural Chinese expression. All tool names (AskUserQuestion, TeamCreate, etc.) remain in English.
 
+### mimo-search
+
+Real-time web search via Xiaomi MiMo API. Uses MiMo's `web_search` tool calling to fetch live public information — news, weather, stock prices, technical docs, and more. Includes a CLI interface (`mimo-search.js`) with configurable search breadth, result count, and output formatting.
+
+```bash
+# Installation
+cp -r mimo-websearch ~/.claude/skills/mimo-search
+
+# Set API Key (get one at https://platform.xiaomimimo.com)
+mimo-search config set api_key sk-xxx
+
+# Or via environment variable
+export MIMO_API_KEY="sk-xxx"
+```
+
+Requirements: Node.js, MiMo API Key (pay-as-you-go, ¥25/1000 searches). Explicit invocation only (`/mimo-search`), no automatic triggering.
+
 ### tim-mediastorm
 
 Writing skill that emulates Tim's (潘天鸿, founder of MediaStorm/影视飓风) distinctive writing style — blending tech rationality with humanistic poetry. Includes a comprehensive style guide covering HKRR theory, narrative arc, elevation techniques, golden sentences, and scenario-specific adaptations. Only activates when the user explicitly requests Tim or MediaStorm style.

@@ -29,7 +29,7 @@ mimo-search --help
 | `-h, --help` | 显示完整帮助信息 | |
 | `-k, --max-keyword <n>` | 每次搜索并发关键词数（控制搜索广度与费用） | 5 |
 | `-l, --limit <n>` | 返回的搜索结果条数 | 5 |
-| `-t, --max-tokens <n>` | 模型回复最大 Token 数 | 2048 |
+| `-t, --max-tokens <n>` | 模型回复最大 Token 数 | 65536 |
 | `-m, --model <name>` | 使用的 MiMo 模型 | mimo-v2.5-pro |
 | `--json` | 以结构化 JSON 格式输出结果 | |
 | `--sources-only` | 仅输出来源链接列表，不含回答内容 | |

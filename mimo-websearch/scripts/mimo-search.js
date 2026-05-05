@@ -182,7 +182,7 @@ function showHelp() {
 选项:
   -k, --max-keyword <n>  最大关键词数 (默认: 5)
   -l, --limit <n>        返回结果数 (默认: 5)
-  -t, --max-tokens <n>   回复最大 token (默认: 2048)
+  -t, --max-tokens <n>   回复最大 token (默认: 65536)
   -m, --model <name>     模型 (默认: mimo-v2.5-pro)
   --json                 原始 JSON 输出
   --sources-only         仅输出来源列表
@@ -264,7 +264,7 @@ async function main() {
     model: args.model || config.model || DEFAULT_MODEL,
     maxKeyword: args.maxKeyword || 5,
     limit: args.limit || 5,
-    maxTokens: args.maxTokens || 2048
+    maxTokens: args.maxTokens || 65536
   };
 
   try {

@@ -16,20 +16,7 @@ Chinese adaptation of the council skill (not a translation). Aligned with the En
 
 ### mimo-search
 
-Real-time web search via Xiaomi MiMo API. Uses MiMo's `web_search` tool calling to fetch live public information — news, weather, stock prices, technical docs, and more. Includes a CLI interface (`mimo-search.js`) with configurable search breadth, result count, and output formatting.
-
-```bash
-# Installation
-cp -r mimo-websearch ~/.claude/skills/mimo-search
-
-# Set API Key (get one at https://platform.xiaomimimo.com)
-mimo-search config set api_key sk-xxx
-
-# Or via environment variable
-export MIMO_API_KEY="sk-xxx"
-```
-
-Requirements: Node.js, MiMo API Key (pay-as-you-go, ¥25/1000 searches). Explicit invocation only (`/mimo-search`), no automatic triggering.
+Real-time web search via Xiaomi MiMo API. Uses MiMo's `web_search` tool calling to fetch live public information — news, weather, stock prices, technical docs, and more. Requires a pay-as-you-go MiMo API Key (`sk-` prefix) with Web Search enabled in the console. Explicit invocation only (`/mimo-search`), no automatic triggering.
 
 ### tim-mediastorm
 

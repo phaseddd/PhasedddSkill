@@ -20,7 +20,7 @@ Real-time web search via Xiaomi MiMo API. Uses MiMo's `web_search` tool calling 
 
 ### grok-vision
 
-Use xAI Grok's native vision/video when the *current* model cannot read images or video directly (or when the user wants Grok for screenshots, UI review, layout/color checks, design mockups, and video timelines). Not a claim that Claude lacks vision — only route here when the active model cannot handle the media, or the user explicitly asks for Grok. Zero-dependency Node ESM script (`image` / `video` / `convert` / `check`); credentials from `GROK_API_KEY` or `~/.grok/auth.json` (never printed). Optional channel-C fallback via local `grok` CLI for large images or API failures; optional `ffmpeg` for format convert. `check` treats credentials as required and grok/ffmpeg as optional (`check --strict` for full stack).
+Image and video analysis via xAI Grok — screenshots, UI review, layout/color checks, design mockups, and video timelines. Prefer when the current model cannot read images/video directly, or when the user explicitly wants Grok; requires a local file path or public image URL (not for pure text/code/docs). Zero-dependency Node script (`image` / `video` / `convert` / `check`); credentials from `GROK_API_KEY` or `~/.grok/auth.json`. Optional local `grok` CLI fallback for large images or API failures; optional `ffmpeg` for format convert. `check` requires credentials only by default (`check --strict` for full stack).
 
 ### tim-mediastorm
 

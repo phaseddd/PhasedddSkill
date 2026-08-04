@@ -18,6 +18,10 @@ Chinese adaptation of the council skill (not a translation). Aligned with the En
 
 Real-time web search via Xiaomi MiMo API. Uses MiMo's `web_search` tool calling to fetch live public information — news, weather, stock prices, technical docs, and more. Requires a pay-as-you-go MiMo API Key (`sk-` prefix) with Web Search enabled in the console. Explicit invocation only (`/mimo-search`), no automatic triggering.
 
+### grok-vision
+
+Bridge Claude (or other agents without native vision) to xAI Grok for image and video analysis — screenshots, UI review, layout/color checks, design mockups, and video timelines. Zero-dependency Node ESM script (`image` / `video` / `convert` / `check`); credentials from `GROK_API_KEY` or `~/.grok/auth.json` (never printed). Optional channel-C fallback via local `grok` CLI for large images or API failures; optional `ffmpeg` for format convert. `check` treats credentials as required and grok/ffmpeg as optional (`check --strict` for full stack).
+
 ### tim-mediastorm
 
 Writing skill that emulates Tim's (潘天鸿, founder of MediaStorm/影视飓风) distinctive writing style — blending tech rationality with humanistic poetry. Includes a comprehensive style guide covering HKRR theory, narrative arc, elevation techniques, golden sentences, and scenario-specific adaptations. Only activates when the user explicitly requests Tim or MediaStorm style.

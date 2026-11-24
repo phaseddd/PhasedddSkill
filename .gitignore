@@ -1,2 +1,7 @@
 # Obsidian
 .obsidian/
+
+# Node / TypeScript build & test caches (pre-built dist/index.mjs is committed for zero-build install)
+node_modules/
+.test-dist/
+*.tmp

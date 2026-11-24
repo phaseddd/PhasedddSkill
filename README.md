@@ -1,6 +1,6 @@
 # PhasedddSkill
 
-My personal collection of open-source Claude Code skills and output styles.
+My personal collection of open-source Claude Code & Codex CLI skills, output styles, and statuslines.
 
 ## Skills
 
@@ -33,6 +33,14 @@ Output styles define Claude's persona, tone, and behavior — they change *how* 
 ### teochew-fun
 
 潮汕话输出风格，把 Claude 变成讲话粗粝直白的胶己人开发搭子。Just For Fun，不推荐生产使用。
+
+## Statuslines
+
+Custom terminal statuslines for AI coding CLIs. See [statuslines/README.md](./statuslines/README.md) for overview and quick setup.
+
+### codex-cometix
+
+Zero-runtime-dependency TypeScript → single-file Node.js MCP statusline for **Codex CLI v0.171+ / v0.172+**, inspired by [CCometixLine](https://github.com/Haleclipse/CCometixLine) and [agy-zh-pack](https://github.com/ncdeng/agy-zh-pack). Ships pre-built (`statuslines/codex-cometix/dist/index.mjs`) with one-command `install` / `preview`, 3 skins (`editorial` / `pill` / `plain`), 8 curated light/dark palettes, hot-reloaded config, local `~/.codex/models_cache.json` + daily cost ledger integration, non-blocking SWR Git telemetry, and dual `/statusline` entrypoints — **Standard Dual-Line Dashboard** plus the **DS Fat Fish (`大肥鱼`) Pixel Dance Edition** (idle bubbling, upright 8-beat pixel dance while `working`). See [statuslines/codex-cometix/README.md](./statuslines/codex-cometix/README.md).
 
 ## Community
 

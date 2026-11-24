@@ -1,0 +1,26 @@
+{
+  "name": "codex-statusline-cometix",
+  "version": "1.0.0",
+  "description": "A bespoke CCometixLine-inspired custom statusline MCP server for Codex CLI (v0.171+) with precision dual-line aesthetics and an optional dancing DeepSeek Fat Fish pixel edition.",
+  "type": "module",
+  "bin": {
+    "codex-cometix": "./dist/index.mjs"
+  },
+  "main": "./dist/index.mjs",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "esbuild src/index.ts --bundle --platform=node --target=node20 --format=esm --outfile=dist/index.mjs --banner:js=\"#!/usr/bin/env node\"",
+    "test": "esbuild test/*.test.ts --bundle --platform=node --target=node20 --format=esm --outdir=.test-dist && node --test .test-dist/*.test.js",
+    "preview": "npm run build && node dist/index.mjs preview",
+    "preview:whale": "npm run build && node dist/index.mjs preview --whale --animate",
+    "check": "npm run typecheck && npm run build && npm test"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "esbuild": "^0.25.0",
+    "typescript": "^5.8.0"
+  }
+}
